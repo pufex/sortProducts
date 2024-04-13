@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>Sorting products on command</title>
+  </head>
+  <body>
+    <div class="products">
+      <div class="sort-container">
+        <select 
+          name="sort" 
+          id="sort-select"
+          autocomplete="false"
+        >
+          <option value="">--Choose Sort--</option>
+          <option value="ascending">Ascending</option>
+          <option value="descending">Descending</option>
+        </select>
+        <button class="btn btn--sort">
+          Sort
+        </button>
+      </div>
+    </div>
+    <script type="module" src="src/fetch.ts"></script>
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
